@@ -1,0 +1,4 @@
+Pillow
+qrcode
+replicate
+python-dotenv
