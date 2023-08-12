@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-st.set_page_config(page_title="QR Code Generator", page_icon=":smiley:", layout="wide")
+st.set_page_config(page_title="QR Code Generator", page_icon=None, layout="wide")
 
 with open("static/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
