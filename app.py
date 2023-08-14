@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-st.set_page_config(page_title="QR Code Generator", page_icon=None, layout="wide")
+st.set_page_config(page_title="Fancy QR", page_icon=None, layout="wide")
 
 with open("static/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
@@ -77,7 +77,7 @@ def generate_fancy_qr(data, image_prompt, batch_size=1):
 with col2:
     prompts = [
         "interior of luxury condominium with minimalist furniture and lush house plants and abstract wall paintings",
-        "The french countryside, green pastures, lush environment, vivid colors, animation by studio ghibli"
+        "The french countryside, green pastures, lush environment, vivid colors, animation by studio ghibli",
         "traditional village, thatched roofs, mountains",
         "a cubism painting of a town with a lot of houses in the snow with a sky background, Andreas Rocha, matte painting concept art, a detailed matte painting",
         "Japanese painting, mountains, 1girl",
